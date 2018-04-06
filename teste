@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+DocumentRoot /usr/share/concerto/public
+<Directory /usr/share/concerto/public>
+RackEnv production
+AllowOverrride all
+Options -MultiViews
+</Directory>
+PassengerMinInstances 3
+</VirtualHost>
